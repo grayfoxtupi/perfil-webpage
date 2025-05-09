@@ -1,0 +1,2 @@
+Sou um desenvolvedor web expecializado em projetos MERN e Spring Boot. 
+Além de otros frameworks associados a estes como: Spring security, Android Studio, zustand e tailwindcss

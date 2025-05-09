@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Raul Nunes</h1>
+  </header>
+
+    <div class="main">
+
+    <div class="main-title">
+
+        <img src="Pictures/github-perfil.jpeg" alt="Profile" class="rounded-img" />
+
+        <h1 class="main-title">MERN Stack and </h1> 
+        <h1 class="main-title">Spring Boot developer</h1>
+
+        <div class="description">
+        <span>I'm a web developer specialized in MERN and Spring Boot projects, as well as other related frameworks such as Spring Security, Android Studio, Zustand, and Tailwind CSS.</span>
+        </div>
+
+        <div>
+          <h3>Experience with:</h3>
+        </div>
+        
+        <div>
+          <img src="Pictures/Icons/icon1.png" alt="Profile"  />
+          <img src="Pictures/Icons/icon3.png" alt="Profile"  />
+          <img src="Pictures/Icons/icon7.png" alt="Profile"  />
+          <img src="Pictures/Icons/icon6.png" alt="Profile"  />
+          <img src="Pictures/Icons/icon8.png" alt="Profile"  />
+          <img src="Pictures/Icons/icon2.png" alt="Profile"  />
+          <img src="Pictures/Icons/icon4.png" alt="Profile"  />
+          <img src="Pictures/Icons/icon5.png" alt="Profile"  />
+        </div>
+    </div>
+
+    <div class="video-preview" style="text-align: center; margin-top: 40px;">
+      <h2 style="color: white;">Tinder clone using spring boot and Ollama AI</h2>
+      <video width="640" height="360" controls poster="../Pictures/previews/preview-image.jpg">
+        <source src="Videos/WhatsApp Video 2025-05-05 at 01.19.11.mp4" type="video/mp4">
+        Seu navegador não suporta a tag de vídeo.
+      </video>
+    </div>
+
+    <div class="experience" style="text-align: center; margin-top: 60px;">
+      <h2 style="color: white;">Professional Experience</h2>
+      <p style="color: white; font-size: 18px;">
+        I'm currently working at <strong>Aladdn</strong> as a <strong>Developer</strong>, focusing on the development of mobile and web applications.
+      </p>
+    </div>
+
+    <div class="projects">
+      <h1>Projects</h1>
+    
+      <div class="grid-div">
+        <div class="grid">
+          <div class="item" onclick="openModal(1,'This was my first personal project with Java. I wanted to learn more about older web technologies like Java Tomcat, so I decided to develop this small project to dive deeper into the topic.' )">
+            <img src="Pictures/Screenshots/pokedex/main_screen.png" alt="Image 1">
+            <p>Pokedex with tomcat servlet</p>
+          </div>
+          <div class="item" onclick="openModal(2,'In this project, I wanted to learn more about using graphical interfaces. So, I decided to create it using Java \'s older graphical interface API: Swing')">
+            <img src="Pictures/Screenshots/snake-game/Screenshot_1.png" alt="Image 2">
+            <p>Snake game with java swing</p>
+          </div>
+          <div class="item" onclick="openModal(3,'When I developed this project, my goal was to learn more about chat development and explore the use of modern JavaScript and CSS frameworks like Zustand and Tailwind CSS.' )">
+            <img src="Pictures/Screenshots/whatsapp-clone/home.png" alt="Image 3">
+            <p>Whatsapp clone</p>
+          </div>
+          <div class="item" onclick="openModal(4,'I wanted to improve my skills in web page development and applying custom styles. So, I recreated the Apple website using only HTML, CSS, and JavaScript.' )">
+            <img src="Pictures/Screenshots/apple-clone/home.png" alt="Image 4">
+            <p>Apple website home</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  <!-- Modal 1 -->
+  <div id="modal1" class="modal" onclick="closeModalByClick(event, 1)">
+    <div class="modal-content">
+      <img src="Pictures/Screenshots/pokedex/main_screen.png" alt="Image 1" class="pop-up">
+      <p id="modal-text1">Conteúdo do Modal 1</p>
+      <p><a href="https://github.com/grayfoxtupi/Pokedex-with-JavaServlet">https://github.com/grayfoxtupi/Pokedex-with-JavaServlet</a></p>
+      <button class="close-btn" onclick="closeModalByButton(1)">Close</button>
+    </div>
+  </div>
+
+  <!-- Modal 2 -->
+  <div id="modal2" class="modal" onclick="closeModalByClick(event, 2)">
+    <div class="modal-content">
+      <img src="Pictures/Screenshots/snake-game/Screenshot_1.png" alt="Image 2" class="pop-up">
+      <p id="modal-text2">Conteúdo do Modal 2</p>
+      <p><a href="https://github.com/grayfoxtupi/Snake-game">https://github.com/grayfoxtupi/Snake-game</a></p>
+      <button class="close-btn" onclick="closeModalByButton(2)">Close</button>
+    </div>
+  </div>
+
+  <!-- Modal 3 -->
+  <div id="modal3" class="modal" onclick="closeModalByClick(event, 3)">
+    <div class="modal-content">
+      <img src="Pictures/Screenshots/whatsapp-clone/home.png" alt="Image 3" class="pop-up">
+      <p id="modal-text3">Conteúdo do Modal 3</p>
+      <p><a href="https://github.com/grayfoxtupi/whatsapp-clone">https://github.com/grayfoxtupi/whatsapp-clone</a></p>
+      <button class="close-btn" onclick="closeModalByButton(3)">Close</button>
+    </div>
+  </div>
+
+  <!-- Modal 4 -->
+  <div id="modal4" class="modal" onclick="closeModalByClick(event, 4)">
+    <div class="modal-content">
+      <img src="Pictures/Screenshots/apple-clone/home.png" alt="Image 4" class="pop-up">
+      <p id="modal-text4">Conteúdo do Modal 4</p>
+      <p><a href="https://github.com/grayfoxtupi/apple-site-clone">https://github.com/grayfoxtupi/apple-site-clone</a></p>
+      <button class="close-btn" onclick="closeModalByButton(4)">Close</button>
+    </div>
+  </div>
+  <footer style="background-color: #222; color: white; text-align: center; padding: 20px; margin-top: 40px;">
+    <p>&copy; 2025 Raul Nunes. Todos os direitos reservados.</p>
+    <p>Contato: <a href="mailto:seuemail@exemplo.com" style="color: #00aced;">seuemail@exemplo.com</a></p>
+    <div style="margin-top: 10px;">
+      <a href="https://github.com/grayfoxtupi" target="_blank" style="margin: 0 10px; color: white;">GitHub</a>
+      <a href="https://www.linkedin.com/in/raulrpn/" target="_blank" style="margin: 0 10px; color: white;">LinkedIn</a>
+    </div>
+  </footer>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
